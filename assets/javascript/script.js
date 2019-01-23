@@ -1,5 +1,9 @@
 $(document).ready(() => {
 
+    var $animalButtons = $('#animalButtons');
+
+
+
     $('#userInput').on('click', function () {
         $('#userInput').val('');
     });
@@ -12,10 +16,25 @@ $(document).ready(() => {
 
         $('#userInput').val('');
 
-        $('#buttons').append('<button class="buttons" data-animal="' + newButton + '">' + newButton + '</button>')
+        $animalButtons.append('<button class="buttons" data-animal="' + newButton + '">' + newButton + '</button>')
     });
 
-    $(document).on("click", "button", function () {
+    //Want to make it so hitting enter will cause submission too
+
+    // $('#userButton').keyup(function (event) {
+    //     if (event.keyCode === 13) {
+
+    //         var newButton = $('#userInput').val().trim();
+    //         console.log("new button: " + newButton);
+    
+    //         $('#userInput').val('');
+
+    //         $animalButtons.append('<button class="buttons" data-animal="' + newButton + '">' + newButton + '</button>')
+    //     }
+    // });
+
+    $animalButtons.on('click', 'button', function () {
+        console.log('buttons');
         var animal = $(this).attr("data-animal");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
             animal + "&api_key=TcF1VsGduKCmO6F9l9ODolJkfJtqlqJi&limit=10";

@@ -93,3 +93,12 @@
     border-radius: .3rem;
     margin: .1rem;
 }
+
+#gifs-appear-here {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gifs-appear-here > div {
+    flex: 1;
+}
