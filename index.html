@@ -17,7 +17,7 @@
 <body>
 
     <!--background-->
-    <!-- <div class="bg"> -->
+    <div class="bg">
 
     <div class="container-fluid text-center">
         <div class="row">
@@ -43,11 +43,11 @@
                 <div class="wrapper">
                     <div class="subwrapper">
                         <div id="animalButtons">
-                            <button data-animal="cat" class="buttons">Cat</button>
-                            <button data-animal="dog" class="buttons">Dog</button>
-                            <button data-animal="bird" class="buttons">Bird</button>
-                            <button data-animal="wolf" class="buttons">Wolf</button>
-                            <button data-animal="crow" class="buttons">Crow</button>
+                            <button class="buttons" data-animal="Cat">Cat</button>
+                            <button class="buttons" data-animal="Dog">Dog</button>
+                            <button class="buttons" data-animal="Bird">Bird</button>
+                            <button class="buttons" data-animal="Wolf">Wolf</button>
+                            <button class="buttons" data-animal="Crow">Crow</button>
                         </div>
 
                     </div>
@@ -60,7 +60,7 @@
                 <div class="wrapper">
                     <div class="subwrapper">
 
-                        <input type="text" id="userInput" value="Add your own animal!">
+                        <input type="text" id="userInput" class="input-field" placeholder="Add your own animal!">
                         <input id="userButton" value="Submit" type="submit" class="buttons">
 
                     </div>
@@ -86,12 +86,11 @@
         </div>
     </footer>
 
-    <!-- </div> -->
+    </div>
 
 
     <!-- Used for Bootstrap -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- Does this jQuery need to go at the bottom or top?  Outside body tag????-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
