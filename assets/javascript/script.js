@@ -52,7 +52,6 @@ $(document).ready(() => {
                 var rating = results[i].rating;
 
                 var p = $("<p>").text("Rating: " + rating);
-
                 var animalImage = $("<img>");
                 console.log(results[i]);
                 animalImage.attr("src", results[i].images.fixed_height.url);
